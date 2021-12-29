@@ -1,10 +1,9 @@
 const http = require('http');
 const express = require("express");
 const RED = require("node-red");
-
 const app = express();
-
 const server = http.createServer(app);
+
 const settings = {
     httpAdminRoot:"/editor",
     httpNodeRoot: "/api",
@@ -22,8 +21,6 @@ const settings = {
     },
     editorTheme: {}
 };
-
-
 
 RED.init(server,settings);
 
