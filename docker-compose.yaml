@@ -1,0 +1,15 @@
+version: "3.8"
+services:
+  node-red:
+    build: .
+    image: lahirs2/example-microservice
+    restart: unless-stopped
+    environment:
+      - TZ=Asia/Kolkata
+    ports:
+      - 8000:8000
+    networks:
+      - node-red-net
+
+networks:
+  node-red-net:

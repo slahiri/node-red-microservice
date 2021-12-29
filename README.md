@@ -1,2 +1,2 @@
-# basic-api
+# Example Low Code Microservice
 basic-api
